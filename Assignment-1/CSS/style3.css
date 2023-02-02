@@ -41,6 +41,7 @@ a {
 }
 
 .product-button:hover {
+    font-weight: bold;
     background-color: yellow;
 }
 

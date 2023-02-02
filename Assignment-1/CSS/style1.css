@@ -44,6 +44,7 @@ a {
 }
 
 .cart-button:hover {
+    font-weight: bold;
     background-color: yellow;
 }
 
@@ -90,6 +91,7 @@ a {
 }
 
 .option-1:hover {
+    font-weight: bold;
     background-color: yellow;
 }
 
@@ -125,6 +127,7 @@ a {
 }
 
 .option-2:hover {
+    font-weight: bold;
     background-color: yellow;
 }
 
@@ -151,6 +154,7 @@ a {
 }
 
 .option-3:hover {
+    font-weight: bold;
     background-color: yellow;
 }
 
@@ -175,6 +179,7 @@ a {
 }
 
 .option-4:hover {
+    font-weight: bold;
     background-color: yellow;
 }
 
@@ -200,6 +205,7 @@ a {
 }
 
 .option-5:hover {
+    font-weight: bold;
     background-color: yellow;
 }
 
@@ -224,6 +230,7 @@ a {
 }
 
 .option-6:hover {
+    font-weight: bold;
     background-color: yellow;
 }
 
