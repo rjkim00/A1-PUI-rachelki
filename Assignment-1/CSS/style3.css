@@ -10,7 +10,6 @@ hr {
     background: black;
 }
 
-
 body {
     margin: 0px;
     padding: 0px;
@@ -46,7 +45,6 @@ a {
 }
 
 .product-button {
-    /* text-align: center; */
     padding: 0px;
     margin: .5rem;
     color: black;
