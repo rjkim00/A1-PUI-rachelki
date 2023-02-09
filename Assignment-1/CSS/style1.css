@@ -84,6 +84,8 @@ a {
 .option-1 {
     padding: 10px;
     margin-bottom: 50px;
+
+    border: 1px solid red;
 }
 
 .option-1 a {
