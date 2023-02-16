@@ -1,0 +1,175 @@
+/* PRESETS */
+/* PRESETS */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */
+.top-header-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    /* margin - top, right, bottom, left */
+    margin: 50px 50px 0px 50px;
+
+    /* border: 1px solid red; */
+}
+
+.logo-image img {
+    width: 350px;
+
+}
+
+.nav-line-text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+
+    margin: 0px 10px 0px 30px;
+}
+
+.nav-options {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5rem;
+
+    text-align: center;
+    font-size: 24px;
+
+    padding: 3px;
+    margin-bottom: 20px;
+}
+
+.product-option {
+    margin: 5px;
+    font-weight: bolder;
+}
+
+.product-option:hover {
+    background-color: yellow;
+}
+
+.cart-option {
+    margin: 5px;
+}
+
+.cart-option:hover {
+    background: yellow;
+    -webkit-text-stroke: 1.25px black;
+}
+
+hr {
+    height: 5px;
+    background-color: black;
+}
+
+.details-page-title {
+    font-size: 35px;
+    margin-top: 45px;
+}
+
+/*Product Detail Content*/
+.product-detail-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+    gap: 40px;
+}
+
+.product-image {
+    margin-right: 20px;
+}
+
+.product-image img {
+    max-width: 500px;
+    border: 4px solid black;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.customize-text h2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.options-box{
+    margin: 20px 0px 20px 0px;
+}
+
+.glazingDrop h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.packDrop h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+select {
+    width: 100%;
+    height: auto;
+
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* UPDATED PRICE AND ADD BUTTON */
+.price-cart-add {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid magenta; */
+}
+
+.price-cart-add p {
+    display: flex;
+    flex-basis: 50%;
+    
+    justify-content: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    font-weight: bold;
+
+    /* border: 2px solid red; */
+}
+
+#current-price {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#cart-add {
+    font-size: 20px;
+    border: 3px solid black;
+    flex-basis: 50%;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+#cart-add:hover {
+    outline: 1.5px solid black;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+
+
+
+
