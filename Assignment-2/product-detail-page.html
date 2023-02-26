@@ -1,116 +1,85 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <meta charset="UTF-8"/>
+    <meta charset="UFT-8"/>
 
     <title>
         Product Detail Page
     </title>
 
-    <head>
+    <head> 
         <link rel="stylesheet" href="CSS/style2.css">
     </head>
 
     <body>
-        <div class="page-box">
-
-            <!-- Header area of website -->
-            <div class="top-header-area">
-
-                <!-- bakery logo  -->
-                <div class="bakery-logo-image">
+        <div class="top-header-area">
+            <!-- Bakery logo -->
+            <div class="logo-image">
+                <a href="./index.html">
+                    <img class="bakery-logo" src="logo/logo-01.svg" alt="BunBun-Bakery-logo"/>
+                </a>
+            </div>
+ 
+         <!-- Navigation Bar -->
+            <div class="nav-line-text">
+                <div class="nav-options">
+                    <a href="./shopping-cart-page.html">
+                        <div class="cart-option">CART</div>
+                    </a>
                     <a href="./index.html">
-                        <img class="logo-01" src="logo/logo-01.svg"
-                            alt="BunBun-bakery-logo"/>
+                        <div class="product-option">PRODUCTS</div>
+                    </a>
+            </div>
+            <div class="line-design">
+                <hr>
+            </div>
+            <div class="details-page-title">
+                Original Cinnamon Roll
+            </div>
+        </div>
+     </div>
+
+        <div class="product-detail-box">
+            <div class="product-image">
+                <img src="products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll">
+            </div>
+            <!-- Selection options -->
+            <div class="product-details">
+                <div class="customize-text">
+                    <h2>Customize our delicious,<br>hand-made cinnamon roll to <br>your liking!</h2>
+                </div>
+                
+                <div class="options-box">
+                    <div class="glazingDrop">
+                        <h2>Glazing:</h2>
+                        <select id="glazingTypes" onchange="glazingChange(this)">
+                            <!-- <option value="0.00">Keep original</option>
+                            <option value="0.00">Sugar milk</option>
+                            <option value="0.50">Vanilla milk</option>
+                            <option value="1.50">Double chocolate</option> -->
+                        </select>
+                    </div>
+                    <div class="packDrop">
+                        <h2>Pack Size:</h2>
+                        <select id="packSizes" onchange="packingChange(this)">
+                            <!-- <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="5">6</option>
+                            <option value="10">12</option> -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="price-cart-add">
+                    <p id = "current-price">$2.49</p>
+                    <a href="./shopping-cart-page.html"
+                        id ="cart-add">
+                        Add to Cart
                     </a>
                 </div>
-
-                <div class="navigation-line-text">
-
-                <!-- navigation bar: products + cart -->
-                    <div class="navigation-bar">
-                        <a href="./shopping-cart-page.html">
-                            <div class="cart-button">
-                                CART
-                            </div>
-                        </a>
-                        <a href="./index.html">
-                            <div class="product-button">
-                                PRODUCTS
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="line-under-nav">
-                        <hr>
-                    </div>
-
-                    <div class="detail-title">
-                        Original cinnamon roll
-                    </div>
-                </div>
             </div>
-
-            <!-- Detail of product Content -->
-            <div class="detail-content-container">
-
-                <div class="detail-img-container">
-                    <img class="original-detail-img" src="products/original-cinnamon-roll.jpg"
-                        alt="original cinnamon roll"/>
-                </div>
-                <div class="detail-text-options">
-                    <div class="detail-description">
-                        Customize our delicious,<br>hand-made cinnamon roll to <br>your liking!
-                    </div>
-                    <div class="drop-options">
-                        <div class="glazing-option">
-                            <div class="glazing-title">
-                                Glazing:
-                            </div>
-                            <div class="drop-down-1">
-                                <div class="glazing-drop">
-                                    Keep Original
-                                </div>
-                                <div class="triangle-1">
-                                    <div class="down-button-1">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pack-option">
-                            <div class="pack-title">
-                                Pack Size:
-                            </div>
-                            <div class="drop-down-2">
-                                <div class="pack-drop">
-                                    1
-                                </div>
-                                <div class="triangle-2">
-                                    <div class="down-button-2">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="price-add-content">
-                        <div class="price-amount">
-                            <div class="price-number">
-                                $2.49
-                            </div>
-                        </div>
-                        <div class="cartAdd-button">
-                            <a href="./shopping-cart-page.html">
-                                <div class="add-button">
-                                    Add to Cart
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
         </div>
+
+        <script src="./app.js"></script>
+        
     </body>
 </html>

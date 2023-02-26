@@ -1,67 +1,9 @@
+/* PRESETS */
 body {
     margin: 0px;
     padding: 0px;
-
     font-family: sans-serif;
     color: black;
-}
-
-.page-box {
-    border: 3px solid black;
-    margin: 10px;
-    height: max-content;
-}
-
-.top-header-area {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-
-    /* border: 1px solid red; */
-}
-
-.bakery-logo-image img {
-    width: 350px;
-    padding: 20px;
-}
-
-.navigation-line-text {
-    display: flex;
-    flex-direction: column;
-
-    flex-basis: 100%;
-
-    margin-right: 10px;
-    margin-left: 30px;
-}
-
-
-.navigation-bar {
-    display: flex;
-    flex-direction: row-reverse;
-
-    gap: 5rem;
-    text-align: center;
-
-    font-size: 24px;
-
-    padding: 1px;
-    margin-bottom:20px;
-
-    /* border: 1px solid blue; */
-}
-
-.product-button {
-    margin: 5px;
-    font-weight: bolder;
-}
-
-.product-button:hover {
-    background-color: yellow;
 }
 
 a {
@@ -69,218 +11,110 @@ a {
     color: black;
 }
 
-.cart-button {
+/* HEADER */
+.top-header-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    /* margin - top, right, bottom, left */
+    margin: 50px 50px 0px 50px;
+
+    border: 1px solid red;
+}
+
+.logo-image img {
+    width: 350px;
+
+}
+
+.nav-line-text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+
+    margin: 0px 10px 0px 30px;
+}
+
+.nav-options {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5rem;
+
+    text-align: center;
+    font-size: 24px;
+
+    padding: 3px;
+    margin-bottom: 20px;
+}
+
+.product-option {
+    margin: 5px;
+    font-weight: bolder;
+}
+
+.product-option:hover {
+    background-color: yellow;
+}
+
+.cart-option {
     margin: 5px;
 }
 
-.cart-button:hover {
-    background-color: yellow;
-
-    /*could not find a way to prevent layout shift when text turns bold on hover*/
+.cart-option:hover {
+    background: yellow;
     -webkit-text-stroke: 1.25px black;
 }
 
 hr {
-    height:5px;
+    height: 5px;
     background-color: black;
 }
 
-
-.gallery-title {
+.gallery-page-title {
     font-size: 35px;
     margin-top: 45px;
-
-    /* border: 1px solid pink; */
 }
 
-/* ROW 1 of GALLERY */
-.gallery-row-1 {
+/* GALLERY GRID CONTENT */
+.gallery-grid-box {
     display: flex;
-    flex-direction: row;
-    flex-basis: 100%;
-
-    margin-top: 20px;
-
-    /* placing images in the center */
+    flex-wrap: wrap;
     justify-content: center;
-    /* even space between the images */
-    gap: 50px;
 
+    gap: 100px;
+    margin: 50px;
+
+    border: 1px solid blue;
+}
+
+p {
     font-size: 25px;
-    /* border: 1px solid purple; */
+    margin: 10px;
 }
 
-.gallery-row-1 img {
-    max-width: 300px;
-}
-
-/*Original Roll Option*/
-.option-1 {
-    padding: 10px;
-}
-
-.option-1 a {
-    color: black;
-}
-
-.original-roll {
-    border: 4px solid black;
-}
-
-.original-title {
+p u {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-decoration-color: #a5a5a5;
 }
 
-.option-1:hover {
-    font-weight: bold;
-    background-color: yellow;
-}
-
-/*Apple Cinnamon Roll Option*/
-.option-2 {
-    padding: 10px;
-}
-
-.option-2 a {
-    color: black;
-}
-
-.apple-roll {
+.options img {
+    width: 100%;
     border: 4px solid black;
 }
 
-.apple-title {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: #a5a5a5;
+.options {
+    width: 300px;
+    text-align: left;
+    padding: 10px 18px 0px 10px;
+    border: 1px solid green;
 }
 
-.option-2:hover {
+.options:hover {
     font-weight: bold;
     background-color: yellow;
 }
-
-/*Raisin Cinnamon Roll Option*/
-.option-3 {
-    padding: 10px;
-}
-
-.option-3 a {
-    color: black;
-}
-
-.raisin-roll {
-    border: 4px solid black;
-}
-
-.raisin-title {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: #a5a5a5;
-}
-
-.option-3:hover {
-    font-weight: bold;
-    background-color: yellow;
-}
-
-/* ROW 2 of GALLERY */
-.gallery-row-2 {
-    display: flex;
-    flex-direction: row;
-    flex-basis: 100%;
-
-    margin-top: 20px;
-    margin-bottom: 50px;
-
-    /* placing images in the center */
-    justify-content: center;
-    /* even space between the images */
-    gap: 50px;
-
-    font-size: 25px;
-    /* border: 1px solid purple; */
-}
-
-.gallery-row-2 img {
-    max-width: 300px;
-}
-
-/*Walnut Cinnamon Roll Option*/
-.option-4 {
-    padding: 10px;
-}
-
-.option-4 a {
-    color: black;
-}
-
-.walnut-roll {
-    border: 4px solid black;
-}
-
-.walnut-title {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: #a5a5a5;
-}
-
-.option-4:hover {
-    font-weight: bold;
-    background-color: yellow;
-}
-
-/*Double Chocolate Cinnamon Roll Option*/
-.option-5 {
-    padding: 10px;
-}
-
-.option-5 a {
-    color: black;
-}
-
-.choco-roll {
-    border: 4px solid black;
-}
-
-.choco-title {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: #a5a5a5;
-}
-
-.option-5:hover {
-    font-weight: bold;
-    background-color: yellow;
-}
-
-/*Strawberry Cinnamon Roll Option*/
-.option-6 {
-    padding: 10px;
-}
-
-.option-6 a {
-    color: black;
-}
-
-.strawberry-roll {
-    border: 4px solid black;
-}
-
-.strawberry-title {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: #a5a5a5;
-}
-
-.option-6:hover {
-    font-weight: bold;
-    background-color: yellow;
-}
-
-
 
 
 
