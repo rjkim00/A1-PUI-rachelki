@@ -25,6 +25,9 @@ a {
 
 .logo-image img {
     width: 350px;
+    padding: 20px;
+
+    /* border: 1px solid cyan; */
 
 }
 
@@ -67,7 +70,8 @@ a {
 }
 
 hr {
-    height: 5px;
+    height:5px;
+    margin-left: 1%;
     background-color: black;
 }
 
