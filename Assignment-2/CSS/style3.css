@@ -6,12 +6,6 @@ body {
     color: black;
 }
 
-.page-box {
-    border: 3px solid black;
-    margin: 10px;
-    height: max-content;
-}
-
 .top-header-area {
     display: flex;
     flex-direction: row;
@@ -82,8 +76,9 @@ a {
     -webkit-text-stroke: 1.25px black;
 }
 
-hr {
+.line-under-nav hr {
     height:5px;
+    margin-left: 1%;
     background-color: black;
 }
 
@@ -95,264 +90,141 @@ hr {
     /* border: 1px solid pink; */
 }
 
-/* Container for middle content */
-.pageFormat-container {
-    display: flex;
-    flex-direction: row;
-
-    margin-top: 20px;
-
-    margin-left: 10px;
-    margin-right: 10px;
-
-    /* border: 1px solid blue; */
-}
-
-.left-blank-box {
-    width: 350px;
-    padding: 20px;
-    background-color: transparent;
-}
-
-/*cart content*/
-.inside-cart-content{
+/* CART BOX */
+.inside-cart-content {
     display: flex;
     flex-direction: column;
-    flex-grow:1;
+    margin-left: 27%;
 
-    margin-left: 30px;
-    gap: 10px;
+    /* border: solid 1px red; */
 }
-
-.inside-cart-content img {
-    width: 200px;
-    border: 3px solid black;
-}
-
-/*containing detail and price - - - applicable to both rows*/
-.text-container {
+/* SHOPPING CART CONTENT */
+.cartItems {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    align-items: center;
-    padding-left: 20px;
-
-    /* border: 1px solid cyan; */
+    margin-bottom: 50px;
 }
-
-/*cart container 1*/
-.cart-item1 {
+.cartItems img {
+    max-width: 160px;
+    border: solid 5px black;
+    margin-bottom: 10px;
+}
+.cartItems button {
     display: flex;
     flex-direction: row;
-    
-    /* border: 1px solid darkorchid; */
 }
 
-.item1-visual {
+.total-price-item {
     display: flex;
-    flex-direction: column;
-
-    padding: 15px;
-    width: auto;
-
-    /* border: 1px solid red; */
+    flex-direction: row;
 }
 
-.remove-button1 {
-    background-color: transparent;
-    border: 0px;
+.cartItems p {
+    margin-left: 50px;
+    font-size: 25px;
+    line-height: 35px;
 
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: underline;
-} 
+    /* border: solid 1px orange; */
+}
+
+.item-1 {
+    flex-direction: row;
+    /* border: solid 1px green; */
+}
 
 .item1-details {
-    font-size: 25px;
-    width: 50%;
-    line-height: 1.25em;
-
-    /* border: 1px solid black; */
+    width: 40%
 }
 
-.item1-total-price {
-    width: 50%;
-    text-align: center;
-    font-size: 30px;
+.item1-total {
+    flex: 1;
+    text-align: right;
+    align-self: center; 
+    margin-right: 80px;
 
-    /* border: 1px solid red; */
+    /* border: solid 1px red; */
 }
 
-/*cart container 2*/
-.cart-item2 {
-    display: flex;
+.item-2 {
     flex-direction: row;
-    
-    /* border: 1px solid darkorchid; */
+    /* border: solid 1px green; */
 }
-
-.item2-visual {
-    display: flex;
-    flex-direction: column;
-
-    padding: 15px;
-    width: auto;
-
-    /* border: 1px solid red; */
-}
-
-
-.remove-button2 {
-    background-color: transparent;
-    border: 0px;
-
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: underline;
-} 
 
 .item2-details {
-    font-size: 25px;
-    width: 50%;
-    line-height: 1.25em;
-
-    /* border: 1px solid black; */
+    width: 40%
 }
 
-.item2-total-price {
-    width: 50%;
-    text-align: center;
-    font-size: 30px;
+.item2-total {
+    flex: 1;
+    text-align: right;
+    align-self: center; 
+    margin-right: 80px;
 
-    /* border: 1px solid red; */
+    /* border: solid 1px red; */
 }
 
-/*bottom remaining content --- divider, total price, and pay*/
-.bottom-container {
-    display: flex;
-    flex-direction: column;
-
-    margin-left: 10px;
-    margin-right: 10px;
-
-    /* border: 1px solid cyan; */
+/* CART SUMMARY --- TOTAL PRICE */
+.divider-line hr {
+    height: 5px;
+    background-color: black;
 }
 
-
-/* line below cart items  */
-.bottom1 {
-    display: flex;
-    flex-direction: row; 
-    flex-grow: 1;
-
-    align-items: center;
-
-    /* border: 1px solid magenta; */
-}
-
-.left-empty-box2 {
-    width: 350px;
-    padding: 20px; 
-    background-color: transparent;
-}
-
-.items-total-divider {
-    flex-grow: 1;
-    margin-left: 30px;
-
-    /* border: 1px solid green; */
-}
-
-/* total price*/
-.bottom2 {
-    display: flex;
-    flex-direction: row; 
-    flex-grow: 1;
-
-    align-items: center;
-
-    /* border: 1px solid blue; */
-}
-
-.left-empty-box3 {
-    width: 640px;
-    padding: 20px; 
-    background-color: transparent;
-}
-
-.total-price-box {
-    flex-grow: 1;
-
-    /* border: 1px solid green; */
-}
-
-.secondary-total-box {
+.total-price-item {
+    /* border: solid 3px purple; */
     display: flex;
     flex-direction: row;
-    flex-grow:1;
-    align-items: center;
 
-    padding-left: 20px;
+    margin-left: 230px;
+    font-size: 35px;
 }
 
-.total-text {
-    flex-grow:1;
-    font-size: 35px;
-
-    /* border: 1px solid orange; */
+.total-label {
+    width: 40%;
+    /* border: solid 1px orange; */
 }
 
 .total-price {
-    flex-grow:1;
-    text-align: center;
-    font-size: 30px;
+    flex: 1;
+    text-align: right;
+    align-self: center;
+    margin-right: 80px;
 
-    /* border: 1px solid blue; */
+    /* border: solid 1px red; */
 }
 
-/* Checkout Section */
-.bottom3 {
-    display: flex;
-
-    margin-top: 60px;
-    margin-bottom: 50px;
-
-    margin-left: 680px;
-
-    /* border: 1px solid blue; */
-}
-
-
-.button-container {
-    flex-grow: 1;
-    display: flex;
-    justify-content: right;
-    align-items: right;
-
-    padding-right:50px;
-
-}
-.checkout-button {
+/* REMOVE BUTTON FOR ITEMS */
+.cartItems button {
+    border: 0px;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
     background-color: transparent;
-    font-size: 25px;
-    border: 3px solid black;
+    font-weight: bold;
+}
 
-    padding-top:10px;
-    padding-bottom:10px;
+/* CHECKOUT SECTION */
+.button-container {
+    /* border: solid 1px pink; */
+    margin: 0px 80px 0px 220px;
+    padding: 10px 0px 10px 10px;
+    display: flex;
+    flex-direction: row-reverse
+}
+
+.checkout-button {
+    background-color: white;
+    font-size: 25px;
+    font-weight: normal;
+    padding: 10px 40px 10px 40px;
+    border: solid 2px black;
+    justify-items: flex-end;
 }
 
 .checkout-button:hover {
-    font-weight: bold;
-    outline: 1.5px solid black;
     background-color: yellow;
+    -webkit-text-stroke: 1.1px black;
+    border: solid 2.5px black;
+    text-decoration: none;
 }
-
-
-
-
-
-
-
 
 
 
