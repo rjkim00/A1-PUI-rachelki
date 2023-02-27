@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head> 
+        <meta charset="UFT-8"/>
+        <title>
+            Product Detail Page
+        </title>
+        <link rel="stylesheet" href="CSS/style2.css">
+    </head>
+
+    <body>
+        <div class="top-header-area">
+
+            <!-- bakery logo  -->
+            <div class="bakery-logo-image">
+                <a href="./index.html">
+                    <img class="logo-01" src="logo/logo-01.svg"
+                        alt="BunBun-bakery-logo"/>
+                </a>
+            </div>
+
+            <!-- navigation bar: products + cart -->
+            <div class="navigation-line-text">
+                <div class="navigation-bar">
+                    <a href="./cart-page.html">
+                        <div class="cart-button">
+                            CART
+                        </div>
+                    </a>
+                    <a href="./index.html">
+                        <div class="product-button">
+                            PRODUCTS
+                        </div>
+                    </a>
+                </div>
+
+                <div class="line-under-nav">
+                    <hr>
+                </div>
+
+                <div id="details-page-title">
+                    Original Cinnamon Roll
+                </div>
+            </div>
+        </div>
+
+        <div class="product-detail-box">
+            <!-- product image -->
+            <div class="product-image">
+                <img class="product-detail-image" 
+                    alt="Image of Selected Cinnamon Roll">
+            </div>
+            <!-- Selection options -->
+            <div class="product-details">
+                <div class="customize-text">
+                    <h2>Customize our delicious,<br>hand-made cinnamon roll to <br>your liking!</h2>
+                </div>
+                
+                <div class="options-box">
+                    <div class="glazingDrop">
+                        <h2>Glazing:</h2>
+                        <select id="glazingTypes" onchange=" new Roll(this)">
+                        </select>
+                    </div>
+                    <div class="packDrop">
+                        <h2>Pack Size:</h2>
+                        <select id="packTypes" onchange="new Roll(this)">
+                        </select>
+                    </div>
+                </div>
+
+                <div class="price-cart-add">
+                    <div id="base-price"></div>
+                    
+                    <a href="#" click="addToCart()" id="cart-add">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="./solution-hw4/price-quantity-details.js"></script>
+
+    </body>
+</html>
