@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <meta charset="UTF-8">
+
+    <title>
+        Shopping Cart Page
+    </title>
+
+    <head>
+        <link rel="stylesheet" href="CSS/style3.css">
+    </head>
+
+    <body>
+           <!-- Header area of website -->
+        <div class="top-header-area">
+
+            <!-- bakery logo  -->
+            <div class="bakery-logo-image">
+                <a href="./index.html">
+                    <img class="logo-01" src="logo/logo-01.svg"
+                        alt="BunBun-bakery-logo"/>
+                </a>
+            </div>
+
+            <!-- navigation bar: products + cart -->
+            <div class="navigation-line-text">
+                <div class="navigation-bar">
+                    <a href="./shopping-cart-page.html">
+                        <div class="cart-button">
+                            CART
+                        </div>
+                    </a>
+                    <a href="./index.html">
+                        <div class="product-button">
+                            PRODUCTS
+                        </div>
+                    </a>
+                </div>
+
+                <div class="line-under-nav">
+                    <hr>
+                </div>
+
+                <div class="cart-title">
+                    Shopping Cart
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Rather than utilizing margin/padding or justify-content, using a transparent box -->
+        <div class="inside-cart-content">
+            <!-- CART CONTENT -->
+            <div class="cartItems item-1">
+                <div class="item1-visual">
+                    <img src="products/original-cinnamon-roll.jpg" alt="Cart Item 1 Image">
+                    <button class="remove-button">
+                        Remove
+                    </button>
+                </div>
+                <p class="item1-details">
+                    Original Cinnamon Roll<br>
+                    Glazing: Keep Original<br>
+                    Pack Size: 1
+                </p>
+                <p class="item1-total">
+                    $2.49
+                </p>
+            </div>
+            <div class="cartItems item-2">
+                <div class="item1-visual">
+                    <img src="products/double-chocolate-cinnamon-roll.jpg" alt="Cart Item 2 Image">
+                    <button class="remove-button">
+                            Remove
+                    </button>
+                </div>
+                <p class="item2-details">
+                    Double Chocolate Cinnamon Roll<br>
+                    Glazing: Sugar Milk<br>
+                    Pack Size: 6
+                </p>
+                <p class="item2-total">
+                    $27.45
+                </p>
+            </div>
+
+            <!-- Line divider between content and WHOLE total -->
+            <div class="divider-line">
+                <hr>
+            </div>
+            <!-- creating a fake item image to keep consist format of cart  -->
+            <div class="total-price-item">
+                <p class="total-label">
+                    Total
+                </p>
+                <p class="total-price">
+                    $29.94
+                </p>
+            </div>
+
+            <div class="button-container">
+                <button class="checkout-button">
+                    Checkout
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

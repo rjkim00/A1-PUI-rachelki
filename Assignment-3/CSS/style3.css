@@ -1,0 +1,227 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: sans-serif;
+    color: black;
+}
+
+.top-header-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    /* border: 1px solid red; */
+}
+
+.bakery-logo-image img {
+    width: 350px;
+    padding: 20px;
+
+    /* border: 1px solid cyan; */
+}
+
+.navigation-line-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    margin-left: 30px;
+
+    /* border: 1px solid blue; */
+}
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row-reverse;
+
+    gap: 5rem;
+    text-align: center;
+
+    font-size: 24px;
+
+    /* padding: 1px; */
+    margin-bottom:20px;
+
+    /* border: 1px solid blue; */
+}
+
+.product-button {
+    margin: 5px;
+    font-weight: bolder;
+}
+
+/*for mouse position/navigation indicator*/
+.product-button:hover {
+    background-color: yellow;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.cart-button {
+    margin: 5px;
+}
+
+.cart-button:hover {
+    background-color: yellow;
+
+    /*could not find a way to prevent layout shift when text turns bold on hover*/
+    -webkit-text-stroke: 1.25px black;
+}
+
+.line-under-nav hr {
+    height:5px;
+    margin-left: 1%;
+    background-color: black;
+}
+
+
+.cart-title {
+    font-size: 35px;
+    margin-top: 45px;
+
+    /* border: 1px solid pink; */
+}
+
+/* CART BOX */
+.inside-cart-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 27%;
+
+    /* border: solid 1px red; */
+}
+/* SHOPPING CART CONTENT */
+.cartItems {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.cartItems img {
+    max-width: 160px;
+    border: solid 5px black;
+    margin-bottom: 10px;
+}
+.cartItems button {
+    display: flex;
+    flex-direction: row;
+}
+
+.total-price-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.cartItems p {
+    margin-left: 50px;
+    font-size: 25px;
+    line-height: 35px;
+
+    /* border: solid 1px orange; */
+}
+
+.item-1 {
+    flex-direction: row;
+    /* border: solid 1px green; */
+}
+
+.item1-details {
+    width: 40%
+}
+
+.item1-total {
+    flex: 1;
+    text-align: right;
+    align-self: center; 
+    margin-right: 80px;
+
+    /* border: solid 1px red; */
+}
+
+.item-2 {
+    flex-direction: row;
+    /* border: solid 1px green; */
+}
+
+.item2-details {
+    width: 40%
+}
+
+.item2-total {
+    flex: 1;
+    text-align: right;
+    align-self: center; 
+    margin-right: 80px;
+
+    /* border: solid 1px red; */
+}
+
+/* CART SUMMARY --- TOTAL PRICE */
+.divider-line hr {
+    height: 5px;
+    background-color: black;
+}
+
+.total-price-item {
+    /* border: solid 3px purple; */
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 230px;
+    font-size: 35px;
+}
+
+.total-label {
+    width: 40%;
+    /* border: solid 1px orange; */
+}
+
+.total-price {
+    flex: 1;
+    text-align: right;
+    align-self: center;
+    margin-right: 80px;
+
+    /* border: solid 1px red; */
+}
+
+/* REMOVE BUTTON FOR ITEMS */
+.cartItems button {
+    border: 0px;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+/* CHECKOUT SECTION */
+.button-container {
+    /* border: solid 1px pink; */
+    margin: 0px 80px 0px 220px;
+    padding: 10px 0px 10px 10px;
+    display: flex;
+    flex-direction: row-reverse
+}
+
+.checkout-button {
+    background-color: white;
+    font-size: 25px;
+    font-weight: normal;
+    padding: 10px 40px 10px 40px;
+    border: solid 2px black;
+    justify-items: flex-end;
+}
+
+.checkout-button:hover {
+    background-color: yellow;
+    -webkit-text-stroke: 1.1px black;
+    border: solid 2.5px black;
+    text-decoration: none;
+}
