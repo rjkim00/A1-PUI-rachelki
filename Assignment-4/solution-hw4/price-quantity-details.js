@@ -133,7 +133,7 @@ function addToCart() {
     let glazingPrice = parseFloat(glazingSelect.value);
     let packPrice = parseFloat(packSelect.value);
 
-    let roll = new Roll(rolls[rollType].name, glazing, packSize, (basePrice + glazingPrice)*packPrice);
+    let roll = new Roll(rolls[rollType].name, glazing, packSize, basePrice);
     cart.push(roll);
     console.log(cart);
 }
