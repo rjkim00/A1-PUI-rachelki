@@ -50,7 +50,7 @@ let rolls = {
     Strawberry: {
         name: "Strawberry Cinnamon Roll",
         image: "./products/strawberry-cinnamon-roll.jpg",
-        basePrice: 3.49
+        basePrice: 3.99
     }
 };
 
