@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>
+        Shopping Cart Page
+    </title>
+    <head>
+        <link rel="stylesheet" href="CSS/style3.css">
+        <script src="./solution-hw5/rolls-data.js"></script>
+    </head>
+    <body>
+        <div class="top-header-area">
+            <!-- bakery logo  -->
+            <div class="bakery-logo-image">
+                <a href="./index.html">
+                    <img class="logo-01" src="logo/logo-01.svg"
+                        alt="BunBun-bakery-logo"/>
+                </a>
+            </div>
+            <!-- navigation bar: products + cart -->
+            <div class="navigation-line-text">
+                <div class="navigation-bar">
+                    <a href="./shopping-cart-page.html">
+                        <div class="cart-button">
+                            CART
+                        </div>
+                    </a>
+                    <a href="./index.html">
+                        <div class="product-button">
+                            PRODUCTS
+                        </div>
+                    </a>
+                </div>
+                <div class="line-under-nav">
+                    <hr>
+                </div>
+                <div id="cart-title">
+                    Shopping Cart
+                </div>
+            </div>
+        </div>
+        <!-- shopping cart main content -->
+        <div class="shopping-cart-main">
+            <div class ="cart-items">
+                <template id="cart-items-template">
+                    <div class="item-format-box">
+                        <div class="item-content">
+                            <img class="item-image"
+                                src="./products/original-cinnamon-roll.jpg"
+                                alt="ordered cinnamon roll"/>
+                            <div class="item-text">
+                                <p class="description-text" id="roll-type-text"></p>
+                                <p class="description-text" id="glazing-type-text"></p>
+                                <p class="description-text" id="pack-type-text"></p>
+                            </div>
+                            <p class="price-text">$2.49</p>
+                        </div>
+                        <button class="remove-button">Remove</button>
+                    </div>
+                    
+                </template>
+            </div>
+
+            <div class="line-under-nav">
+                <hr>
+            </div>
+
+            <div class="checkout-section">
+                <p class="total-text">Total</p>
+                <p class="price-text" id="total-price-text"></p>
+            </div>
+
+
+        </div>
+        <script src="./solution-hw5/cart-remove-solution.js"></script>
+    </body>
+</html>

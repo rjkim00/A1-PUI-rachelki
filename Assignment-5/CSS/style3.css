@@ -1,0 +1,172 @@
+/* top header area styling */
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: sans-serif;
+    color: black;
+}
+
+.top-header-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    /* margin - top, right, bottom, left */
+    margin: 50px 50px 0px 50px;
+
+    /* border: 1px solid red; */
+}
+
+.bakery-logo-image img {
+    width: 350px;
+    padding: 20px;
+
+    /* border: 1px solid cyan; */
+}
+
+.navigation-line-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    margin-left: 30px;
+
+    /* border: 1px solid blue; */
+}
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row-reverse;
+
+    gap: 5rem;
+    text-align: center;
+
+    font-size: 24px;
+
+    /* padding: 1px; */
+    margin-bottom:20px;
+
+    /* border: 1px solid blue; */
+}
+
+.product-button {
+    margin: 5px;
+}
+
+/*for mouse position/navigation indicator*/
+.product-button:hover {
+    background-color: yellow;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.cart-button {
+    margin: 5px;
+    font-weight: bolder;
+}
+
+.cart-button:hover {
+    background-color: yellow;
+}
+
+.line-under-nav hr {
+    height:5px;
+    margin-left: 1%;
+    background-color: black;
+}
+
+
+#cart-title {
+    font-size: 35px;
+    margin-top: 45px;
+    margin-left: 1%;
+
+    /* border: 1px solid pink; */
+}
+
+/* main shopping cart content styling */
+/* overall box for main content */
+.shopping-cart-main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+    /* border: solid 1px red; */
+}
+
+.cart-items {
+    margin-bottom: 50px;
+}
+
+.item-format-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-content img {
+    max-width: 180px;
+    border: solid 4px black;
+}
+
+.item-text {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.description-text {
+    margin-left: 50px;
+    font-size: 25px;
+    line-height: 10px;
+}
+
+
+
+.price-text {
+    flex: 1;
+    text-align: right;
+    align-self: center;
+
+    font-size: 25px;
+}
+
+.checkout-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.total-text {
+    margin-left: 250px;
+    font-size: 35px;
+}
+
+#total-price-text {
+    font-size: 35px;
+}
+
+.remove-button {
+    display: flex;
+    justify-self: left;
+
+    font-size: 15px;
+    
+    border: 0px;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    background-color: transparent;
+    font-weight: bold;
+
+    margin-top: 15px;
+}
