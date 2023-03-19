@@ -22,9 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid red; */
     font-size: 30px;
-    /* line-height: 2em; */
 }
 
 mark {
@@ -32,9 +30,7 @@ mark {
 }
 
 .product-button {
-    /* text-align: center; */
     font-weight: bold;
-    /* border: 1px solid green; */
     margin: .5rem;
 }
 
@@ -48,12 +44,9 @@ a {
 }
 
 .cart-button {
-    /* text-align: center; */
     padding: 0px;
     margin: .5rem;
     color: black;
-
-    /* border: 1px solid green; */
 }
 
 .detail-title {
@@ -121,12 +114,10 @@ img {
     padding-left: 20px;
 
     width: 340px;
-    /* border: 1px solid red */
 }
 
 .triangle-button-1 {
     display: flex;
-    /* border: 1px solid red; */
 }
 
 .down-button-arrow-1 {
@@ -165,12 +156,10 @@ img {
     padding-left: 20px;
 
     width: 340px;
-    /* border: 1px solid red */
 }
 
 .triangle-button-2 {
     display: flex;
-    /* border: 1px solid red; */
 }
 
 .down-button-arrow-2 {
