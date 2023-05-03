@@ -1,0 +1,218 @@
+/* ggl font imports */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@200;400;500;600;700&display=swap');
+
+/* navigation menu  */
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 480;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 950;
+    border: 1px solid black;
+}
+
+main {
+    margin-bottom: 60px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    color: black;
+}
+
+/*--------------- TOP HEADER SECTION -------------- */
+
+.top-header-area {
+    display: flex;
+    flex-direction: row;
+    
+    margin: 50px 50px 0px 50px;
+
+    /* border: 1px solid red; */
+}
+
+.film-camera-sketch-img {
+    width: 400px;
+
+    /* border: 1px solid orange; */
+}
+
+.film-logo-01 {
+    width: 100%;
+
+}
+
+.website-title-text-box {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    margin-left: 50px;
+
+    width: 100% ;
+
+    /* border: 1px solid blue; */
+}
+
+.title-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+
+    letter-spacing: 3px;
+    line-height: 130px;
+    padding: 10px 10px 0px 10px;
+
+    width: 100%;
+
+    /* border: 1px dashed cyan; */
+}
+
+.subtitle-text-1 {
+    font-family: 'Courier Prime', monospace;
+    font-size: 35px;
+
+    letter-spacing: 1px;
+    padding: 0px 10px 0px 10px;
+
+    width: 100%;    
+
+    /* border: 1px solid pink; */
+}
+.description-text-1 {
+    font-family: 'Courier Prime', monospace;
+    font-size: 15px;
+
+    margin-top: 50px;
+    padding: 10px;
+    width: 100%;   
+    line-height: 20px; 
+
+    /* border: 1px solid pink; */
+}
+
+
+
+/*--------------- MIDDLE GALLERY SECTION -------------- */
+/* tabs for accordion gallery */
+*{
+    box-sizing: border-box;
+}
+
+.middle-area {
+    margin-bottom: 60px;
+}
+
+.gallery-row-1 {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    align-content: space-around;
+
+    height: 500px;
+
+    gap: 20px;
+    overflow: hidden;
+    margin: 30px 50px 50px 50px;
+
+    /* border: 1px solid black; */
+}
+
+.tab {
+    position: relative;
+    width: 20%;
+    height: inherit;
+    padding: 20px;
+
+    background-color: rgb(150,150,150);
+    cursor: pointer;
+
+    transition: width 0.75s ease;
+    border-radius: 25px;
+}
+
+.tab img {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: all 0.5s ease;
+    border-radius: 10px;
+}
+
+.tab:hover {
+    width: 100%;
+}
+
+.tab:hover img {
+    opacity: 0.5;
+}
+
+
+.tab-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backdrop-filter: blur(5px);
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: all 0.5s ease-out;
+    border-radius: 25px;
+
+    color: white;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+
+    opacity: 0;
+}
+
+.tab-overlay:hover {
+    opacity: 1;
+}
