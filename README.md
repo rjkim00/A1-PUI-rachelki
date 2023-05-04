@@ -6,4 +6,4 @@ Repository Link: https://github.com/rjkim00/PUI-Assignments-rachelki
 
 Final Project Presentation Link: https://drive.google.com/file/d/1GQJdrhlJi45960i4ziNDxnEhiAMro7WF/view?usp=sharing
 
-Final Project Write-Up Link: 
+Final Project Write-Up Link: https://docs.google.com/document/d/1LLMDrLJHq2oSRu18dIqYsYlj1BMj0ZL1FtP3OwTb4uw/edit?usp=sharing
